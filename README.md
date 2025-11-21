@@ -20,7 +20,7 @@ The notebooks were developed in a Python data environment. Recommended approach 
 Open PowerShell and run:
 
 ```powershell
-conda create -n gdp_analysis python=3.10 -y
+conda create -n gdp_analysis python=3.14 -y
 conda install requirements.txt
 conda activate gdp_analysis
 ```
