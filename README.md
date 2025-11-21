@@ -1,6 +1,6 @@
 # GDP Analysis and Interactive Visualizations
 
-Exploratory analysis and interactive visualizations of GDP per capita (nominal USD) using the included World Bank-style CSV dataset (`gdp_pc_data.csv`). This repository contains Jupyter notebooks for static plotting and interactive Dash apps that let you explore GDP per-capita trends and maps for 2024.
+Exploratory analysis and interactive visualizations of GDP per capita (nominal USD) using the included World Bank-style CSV dataset (`gdp_pc_data.csv`). This repository contains Jupyter notebooks for static plotting and interactive Dash apps that let you explore GDP per-capita trends.
 
 **Notebooks & Key Files**
 - `gdp_plots.ipynb`: Static exploratory plots using `pandas`, `seaborn` and `matplotlib` (time series comparisons between countries).
