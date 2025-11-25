@@ -67,9 +67,7 @@ python gdp_maps.py
 
 ## Examples
 
-### Plots
-
-- Start `gdp_plots.ipynb` to create comparison plots (matplotlib/seaborn).
+### Static plots
 
 ![Poland vs Greece GDP p/c 2000-2024 Plot](assets/pol_gre.png)
 
@@ -77,15 +75,11 @@ python gdp_maps.py
 
 ### Interactive plots
 
-- Start `gdp_graph_choice.ipynb` to pick countries and year ranges interactively
-
 ![U.S. vs China vs India GDP p/c 1960-2024 Plot](assets/us_cn_in.png)
 
 ![China vs India GDP p/c 2000-2020 Plot](assets/cn_in.png)
 
 ### Interactive maps
-
-- Start `gdp_maps.ipynb` to view choropleth maps for 2024.
 
 ![Europe Interactive GDP p/c Map](assets/europe.png)
 
