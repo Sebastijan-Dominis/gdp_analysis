@@ -1,16 +1,16 @@
 # GDP Analysis and Interactive Visualizations
 
-Exploratory analysis and interactive visualizations of GDP per capita (nominal USD) using the included World Bank's CSV dataset (`gdp_pc_data.csv`). This repository contains Jupyter notebooks for static plotting and interactive Dash apps that let you explore GDP-per-capita trends.
+Exploratory analysis and interactive visualizations of GDP per capita (nominal USD) using the included World Bank's CSV dataset (`gdp_pc_data.csv`). This repository contains Jupyter notebooks and python scripts for static plotting and interactive Dash apps that let you explore GDP-per-capita trends.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Notebooks & Key Files](#notebooks--key-files)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Data notes](#data-notes)
 - [Examples](#examples)
 - [License](#license)
+- [Contributing](#contributing)
+- [Author & Contact](#author--contact)
 
 ## Overview
 
@@ -25,47 +25,45 @@ This project contains a few jupyter notebooks that allow the user to explore int
 
 ## Installation
 
-The notebooks were developed in a Python data environment. Recommended approach is to use Conda and a virtual environment named `gdp_analysis` (or any name you prefer).
+1. Clone the repository
 
-Open PowerShell and run:
+```bash
+git clone https://github.com/Sebastijan-Dominis/gdp_analysis
+```
 
-```powershell
+2. Create and activate a python virtual environment
+
+- If using Anaconda:
+```bash
 conda create -n gdp_analysis python=3.14 -y
-conda install requirements.txt
 conda activate gdp_analysis
 ```
 
-## Usage
+3. Install the requirements
 
-1. Open the notebooks in Jupyter Lab or Notebook
-
-```powershell
-jupyter lab
-# or
-jupyter notebook
+```bash
+pip install -r requirements.txt
 ```
 
-Then open and run the notebook cells for:
+4. Open and run the jupyter notebooks
+
 - `gdp_plots.ipynb` — run the cells to generate static visualizations.
 - `gdp_graph_choice.ipynb` — run all cells to start the interactive Dash plotter.
 - `gdp_maps.ipynb` — run all cells to start the interactive choropleth maps.
 
-When the Dash apps are started from the notebooks you will typically see a local server URL printed in the notebook output (e.g. `http://127.0.0.1:8050`) — open that URL in your browser to interact with the app.
+> When the Dash apps are started from the notebooks you will typically see a local server URL printed in the notebook output (e.g. `http://127.0.0.1:8050`) — open that URL in your browser to interact with the app.
 
-2. Running the Dash apps as scripts (optional)
+#### Running the Dash apps as scripts (optional)
 
-If you prefer to run the Dash apps as standalone Python scripts, convert the notebook to a script and then run it. Example (from the project root):
+- If you prefer to run the Dash apps as standalone Python scripts:
 
-```powershell
-jupyter nbconvert --to script gdp_graph_choice.ipynb
+```bash
 python gdp_graph_choice.py
 ```
 
-## Data notes
-
-- The dataset `gdp_pc_data.csv` was downloaded from the World Bank and contains country names and columns for years (1960–2024).
-
-- The notebooks rely on country names being resolvable to ISO3 codes (for maps). Some country name mismatches may cause `pycountry` to fail to find a code; the map notebook filters out entries where an ISO3 code was not found.
+```bash
+python gdp_maps.py
+```
 
 ## Examples
 
@@ -96,8 +94,9 @@ python gdp_graph_choice.py
 ## License
 - This repository includes a `LICENSE` file — please review it for terms of reuse.
 
-**Contributing**
+## Contributing
 - Improvements and bug fixes welcome. Open an issue or submit a pull request with a clear description of the change.
 
-**Contact / Author**
-- Author: repository owner (see repository metadata).
+## Author & Contact
+- Author: Sebastijan Dominis
+- Contact: sebastijan.dominis99@gmail.com
