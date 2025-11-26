@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.express as px
 import dash_bootstrap_components as dbc
 import pycountry
+import os
 from dash import Dash, html, dcc
 from dash.dependencies import Output, Input
 from dash.exceptions import PreventUpdate
@@ -132,4 +133,5 @@ app.layout = dbc.Container(
 )
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host="0.0.0.0", port=port)
