@@ -65,6 +65,14 @@ python gdp_graph_choice.py
 python gdp_maps.py
 ```
 
+#### Accessing the Dash apps online (optional)
+
+- You can use try the Dash apps directly, without cloning this repository here:
+1. GDP Graph Choice: https://gdp-analysis-2.onrender.com/
+2. GDP Maps: https://gdp-analysis.onrender.com/ 
+
+- Note that loading the page may take a few minutes
+
 ## Examples
 
 ### Static plots
